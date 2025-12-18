@@ -5,25 +5,49 @@
 Telegram-бот для управления бизнес-процессами. 
 Бот регистрирует пользователей, напоминает о задачах и выгружает данные в Google Sheets.
 
-### Технологии:
-- Язык программирования — Python
-- База данных — SQLite3, SQLAlchemy
-- Telegram-бот — python-telegram-bot
-- Интеграции — Google Sheets API v4, Google Auth Library
-- python-dotenv
+## Технологии:
 
-### Команда для запуска проекта локально: python bot.py
+- **Язык программирования** — Python 3.11+
+- **База данных** — SQLite3, SQLAlchemy 2.0
+- **Telegram-бот** — python-telegram-bot 20.x
+- **Интеграции** — Google Sheets API v4, Google Auth Library
+- **Конфигурация** — python-dotenv
 
-### Шаги развертывания
-1. Клонировать репозиторий и перейти в него в командной строке:
-   #### git clone git@github.com:Tleuberdina/bot_project.git
-   #### cd bot_project
-3. Cоздать и активировать виртуальное окружение:
-   #### python -m venv venv
-   #### source venv/Scripts/activate
-4. Установить зависимости из файла requirements.txt:
-   #### python -m pip install -- upgrade pip
-   #### pip install -r requirements.txt
-5. Укажите в файле config/.env данные:
-   #### TELEGRAM_BOT_TOKEN=ваш_токен
-   #### GOOGLE_SPREADSHEET_ID=ваш_id_в_google
+## Команда для запуска проекта локально:
+
+```bash
+python bot.py
+Шаги развертывания:
+Клонировать репозиторий и перейти в него:
+
+bash
+git clone https://github.com/ваш-логин/ваш-репозиторий.git
+cd ваш-репозиторий
+Создать и активировать виртуальное окружение:
+
+bash
+# Для Linux/Mac:
+python -m venv venv
+source venv/bin/activate
+
+# Для Windows:
+python -m venv venv
+venv\Scripts\activate
+Установить зависимости:
+
+bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+Настроить переменные окружения:
+
+Создайте файл .env в корне проекта
+
+Добавьте в него:
+
+text
+TELEGRAM_BOT_TOKEN=ваш_токен_бота
+GOOGLE_SPREADSHEET_ID=ваш_id_таблицы
+Запустить бота:
+
+bash
+python bot.py
