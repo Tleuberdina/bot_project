@@ -1,5 +1,5 @@
+# Telegram Business Process Bot
 ## Описание:
-Telegram Business Process Bot
 Telegram-бот для управления бизнес-процессами.
 Бот регистрирует пользователей, напоминает о задачах и выгружает данные в Google Sheets.
 
