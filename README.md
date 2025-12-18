@@ -25,3 +25,13 @@ Telegram-бот для управления бизнес-процессами.
 5. Укажите в файле config/.env данные:
    #### TELEGRAM_BOT_TOKEN=ваш_токен
    #### GOOGLE_SPREADSHEET_ID=ваш_id_в_таблице
+   #### в ссылке на Вашу таблицу указан id таблицы
+   #### https://docs.google.com/spreadsheets/d/здесь_указан_ваш_id/edit?gid=0#gid=0
+6. Настроить Google Sheets API:
+   #### Создайте сервисный аккаунт
+   #### Скачайте файл credentials.json
+   #### Поместите его в корневую папку проекта
+7. Настроить доступ к Google таблице:
+   #### Откройте вашу Google таблицу
+   #### Нажмите "Настройки доступа"
+   #### Добавьте email из credentials.json (поле client_email) как редактора
