@@ -17,37 +17,3 @@ Telegram-бот для управления бизнес-процессами.
 
 ```bash
 python bot.py
-Шаги развертывания:
-Клонировать репозиторий и перейти в него:
-
-bash
-git clone git@github.com:Tleuberdina/bot_project.git
-cd ваш-репозиторий
-Создать и активировать виртуальное окружение:
-
-bash
-# Для Linux/Mac:
-python -m venv venv
-source venv/bin/activate
-
-# Для Windows:
-python -m venv venv
-venv\Scripts\activate
-Установить зависимости:
-
-bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-Настроить переменные окружения:
-
-Создайте файл .env в корне проекта
-
-Добавьте в него:
-
-text
-TELEGRAM_BOT_TOKEN=ваш_токен_бота
-GOOGLE_SPREADSHEET_ID=ваш_id_таблицы
-Запустить бота:
-
-bash
-python bot.py
