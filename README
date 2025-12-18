@@ -21,7 +21,7 @@ python bot.py
 Клонировать репозиторий и перейти в него:
 
 bash
-git clone https://github.com/ваш-логин/ваш-репозиторий.git
+git clone git@github.com:Tleuberdina/bot_project.git
 cd ваш-репозиторий
 Создать и активировать виртуальное окружение:
 
