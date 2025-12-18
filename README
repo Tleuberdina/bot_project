@@ -1,0 +1,53 @@
+# Telegram Business Process Bot
+
+## Описание:
+
+Telegram-бот для управления бизнес-процессами. 
+Бот регистрирует пользователей, напоминает о задачах и выгружает данные в Google Sheets.
+
+## Технологии:
+
+- **Язык программирования** — Python 3.11+
+- **База данных** — SQLite3, SQLAlchemy 2.0
+- **Telegram-бот** — python-telegram-bot 20.x
+- **Интеграции** — Google Sheets API v4, Google Auth Library
+- **Конфигурация** — python-dotenv
+
+## Команда для запуска проекта локально:
+
+```bash
+python bot.py
+Шаги развертывания:
+Клонировать репозиторий и перейти в него:
+
+bash
+git clone git@github.com:Tleuberdina/bot_project.git
+cd ваш-репозиторий
+Создать и активировать виртуальное окружение:
+
+bash
+# Для Linux/Mac:
+python -m venv venv
+source venv/bin/activate
+
+# Для Windows:
+python -m venv venv
+venv\Scripts\activate
+Установить зависимости:
+
+bash
+python -m pip install --upgrade pip
+pip install -r requirements.txt
+Настроить переменные окружения:
+
+Создайте файл .env в корне проекта
+
+Добавьте в него:
+
+text
+TELEGRAM_BOT_TOKEN=ваш_токен_бота
+GOOGLE_SPREADSHEET_ID=ваш_id_таблицы
+Запустить бота:
+
+bash
+python bot.py
